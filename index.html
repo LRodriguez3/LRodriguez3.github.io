@@ -1,1 +1,200 @@
-Hello World
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Data Scientist & ML Engineer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #0078d7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav > a, nav > div.dropdown > a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0 4rem;
+        }
+        .image-container, .chart-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin-left: 10px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #0078d7;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 20px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #0078d7;
+            transform: translateX(-50%);
+        }
+        .project {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luc Rodriguez</h1>
+        <p>Data Scientist & ML Engineer</p>
+    </header>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#a-propos">À Propos</a>
+        <div class="dropdown">
+            <a href="#projets">Projets</a>
+            <div class="dropdown-content">
+                <a href="pages/enedis.html">Enedis</a>
+                <a href="pages/keolis_hove.html">Keolis / Hove</a>
+                <a href="pages/michelin.html">Michelin</a>
+                <a href="pages/side_projects.html">Side Projects</a>
+            </div>
+        </div>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="accueil">
+            <h2 style="text-align: center;">Bienvenue sur mon Portfolio</h2>
+            <div class="image-container">
+                <img src="images/neural_network.jpg" alt="Réseau de Neurones" style="max-width: 100%; height: auto;">
+            </div>
+            <p style="text-align: justify;">Explorez mes projets et découvrez mon parcours professionnel dans le domaine de la data science et du machine learning.</p>
+        </section>
+        <section id="a-propos">
+            <h2 style="text-align: center;">À Propos de Moi</h2>
+            <p style="text-align: justify;">Je suis un data scientist et un ingénieur en machine learning spécialisé dans le domaine de l'énergie et des mécanismes de marché avec une expertise sur les stacks AWS, Databricks et Power BI.</p>
+            <div class="chart-container">
+                <h3>Mon expertise en tant que data person</h3>
+                <img src="images/cat_pie_chart.png" alt="Pie Chart" style="max-width: 100%; height: auto;">
+            </div>
+        </section>
+        <section id="projets">
+            <h2 style="text-align: center;">Mes Projets</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3><a href="pages/enedis.html">Enedis (2024 - Aujourd'hui)</a></h3>
+                    <ul>
+                        <li style="text-align: justify;">Méthode des Panels: Création d'un moteur de calcul pour la prédiction de consommation.</li>
+                        <li style="text-align: justify;">KPPVGeo: Développement d'un moteur de calcul pour la prédiction de production des producteurs photovoltaïques et éoliens.</li>
+                        <li style="text-align: justify;">Valorisation des données NLP pour la consommation: Utilisation de données de réseaux sociaux et d'autres sources pour expliquer et prédire la consommation.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3><a href="pages/keolis_hove.html">Keolis / Hove (2022 - 2023)</a></h3>
+                    <ul>
+                        <li style="text-align: justify;">Data Engineer: Conception d'une chaîne de traitement sur Databricks.</li>
+                        <li style="text-align: justify;">Data Analytics: Création d'une visualisation de données pour une flotte de vélib.</li>
+                        <li style="text-align: justify;">Data Science / ML Engineer:
+                            <ul>
+                                <li style="text-align: justify;">Segmentation de clientèle.</li>
+                                <li style="text-align: justify;">Segmentation de territoire.</li>
+                                <li style="text-align: justify;">Prédiction de logs d'une application.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3><a href="pages/michelin.html">Michelin (2018 - 2021)</a></h3>
+                    <ul>
+                        <li style="text-align: justify;">Développement d’un modèle de machine learning hybride pour la prédiction de la performance de pneumatiques sur Python.</li>
+                        <li style="text-align: justify;">Développement d’un outil d’analyse de survie sur R.</li>
+                        <li style="text-align: justify;">Développement d’une méthode de validation de simulations via des outils statistiques.</li>
+                        <li style="text-align: justify;">Stage aux États-Unis, analyse de données de pression de pneumatique.</li>
+                    </ul>
+                </div>
+            </div>
+            <section style="text-align: left;">
+                <h3><a href="pages/side_projects.html">Side Projects</a></h3>
+                <ul>
+                    <li style="text-align: justify;">Prédiction de la consommation électrique par les déplacements.</li>
+                    <li style="text-align: justify;">Prédiction de problèmes fœtaux par un cardiotocographe.</li>
+                </ul>
+            </section>
+        </section>
+        <section id="contact">
+            <h2 style="text-align: center;">Contact</h2>
+            <p style="text-align: justify;">Vous pouvez me contacter via <a href="mailto:luc.rodriguez@enedis.fr">email</a> ou me suivre sur <a href="https://linkedin.com/in/votreprofil">LinkedIn</a>.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 Luc Rodriguez. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
