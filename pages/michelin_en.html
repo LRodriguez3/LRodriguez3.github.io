@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelin - Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #0078d7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav > a, nav > div.dropdown > a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0 4rem;
+        }
+        .logo-container {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .project {
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .language-switch {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+        .language-switch button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switch">
+        <button onclick="window.location.href='../pages/michelin.html'">Français</button>
+    </div>
+    <header>
+        <h1>Luc Rodriguez</h1>
+        <p>Data Scientist & ML Engineer</p>
+    </header>
+    <nav>
+        <a href="../index_en.html">Home</a>
+        <a href="../index_en.html#about">About</a>
+        <div class="dropdown">
+            <a href="../index_en.html#projects">Projects</a>
+            <div class="dropdown-content">
+                <a href="enedis_en.html">Enedis</a>
+                <a href="keolis_hove_en.html">Keolis / Hove</a>
+                <a href="michelin_en.html">Michelin</a>
+                <a href="side_projects_en.html">Side Projects</a>
+            </div>
+        </div>
+        <a href="../index_en.html#contact">Contact</a>
+    </nav>
+    <div class="logo-container">
+        <img src="../images/logo_michelin.png" alt="Michelin Logo" style="max-width: 300px; height: auto;">
+    </div>
+    <div class="container">
+        <h2 style="text-align: center;">Michelin</h2>
+        <p style="text-align: justify;">I worked at the Michelin R&D site in Ladoux in the Clermont-Ferrand area, in the Mining business line which includes tires mounted on rigid dumpers.</p>
+        <p style="text-align: justify;">A rigid dumper is a vehicle used in mines to transport large quantities of materials. It is equipped with six tires that can weigh up to five tons and measure up to four meters in diameter.</p>
+        <div class="image-container">
+            <img src="../images/dumper.jpg" alt="Rigid Dumper" style="max-width: 45%; height: auto;">
+            <img src="../images/tyre.jpg" alt="Dumper Tire" style="max-width: 45%; height: auto;">
+        </div>
+        <h3 style="text-align: center;">Projects at Michelin</h3>
+        <div class="project">
+            <h4>Development of a Hybrid Machine Learning Model for Predicting Tire Performance on Python</h4>
+            <p>Project on the preventive maintenance of tires. Using pressure and temperature data from sensors as well as inertial centers, GPS traces, and maintenance operation history to create a hybrid machine learning model (a mix of statistical and physical models). My contribution allowed the creation of a processing chain for the fusion of heterogeneous and temporal data as well as the design of a first model.</p>
+        </div>
+        <div class="project">
+            <h4>Development of a Survival Analysis Tool on R</h4>
+            <p>Development of a survival analysis tool based on Weibull laws allowing tire range developers to monitor the population of their products and also to anticipate changes in new ranges from the life histories of the old ones. Integration of Bayesian statistics to allow inferences on product segments never seen before but for which we have a prior estimate.</p>
+            <div class="image-container">
+                <img src="../images/weibull.png" alt="Weibull Analysis" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+        <div class="project">
+            <h4>Development of a Method for Validating Simulations via Statistical Tools</h4>
+            <p>Study on the ability to use finite element simulations to avoid performing destructive tests on tires, in order to reduce expenses. After planning and executing a simulation experiment under the same conditions as the historical tests in the past, a decision-making methodology based on notions of confidence intervals and risk was developed to determine if finite element simulations are sufficient for the certification of a new range of tires.</p>
+        </div>
+        <div class="project">
+            <h4>Internship in the United States, Analysis of Tire Pressure Data</h4>
+            <p>Two-month internship in Greenville, South Carolina, at the Michelin R&D center. The subject of the internship focused on the study of new materials supposed to have better performance in resisting tire punctures. Using tools such as analysis of variance (ANOVA), performed on tires that have run under real conditions, we were able to study whether there was an effect of the material factor on the presence of punctures and the tire deflation speed.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Luc Rodriguez. All rights reserved.</p>
+    </footer>
+</body>
+</html>

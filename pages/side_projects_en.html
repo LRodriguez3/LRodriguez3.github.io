@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #0078d7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav > a, nav > div.dropdown > a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0 4rem;
+        }
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .project {
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .language-switch {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+        .language-switch button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switch">
+        <button onclick="window.location.href='../pages/side_projects.html'">Français</button>
+    </div>
+    <header>
+        <h1>Luc Rodriguez</h1>
+        <p>Data Scientist & ML Engineer</p>
+    </header>
+    <nav>
+        <a href="../index_en.html">Home</a>
+        <a href="../index_en.html#about">About</a>
+        <div class="dropdown">
+            <a href="../index_en.html#projects">Projects</a>
+            <div class="dropdown-content">
+                <a href="enedis_en.html">Enedis</a>
+                <a href="keolis_hove_en.html">Keolis / Hove</a>
+                <a href="michelin_en.html">Michelin</a>
+                <a href="side_projects_en.html">Side Projects</a>
+            </div>
+        </div>
+        <a href="../index_en.html#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <h2 style="text-align: center;">Side Projects</h2>
+        <p style="text-align: justify;">Some of my personal projects</p>
+        <div class="project">
+            <h3>Prediction of Electrical Consumption by Travel</h3>
+            <p>Upcoming project.</p>
+        </div>
+        <div class="project">
+            <h3>Prediction of Fetal Problems by Cardiotocography</h3>
+            <p>School project on the valorization of data from a cardiotocograph to predict fetal problems. This is a multi-objective classification problem. The project presents the resolution of the trial with the approach specific to data science. Initially, we will use TPOT (Tree-Based Pipeline Optimization Tool), an AutoML tool to create a baseline that we will attempt to surpass. The experimentation also shows a test of coupling between the models adjusted on each of the target columns where the prediction of one adjusted on the first target becomes the feature of the next adjusted on the second, etc. The project is available here.</p>
+            <div class="image-container">
+                <img src="../images/cardiotocographe.png" alt="Cardiotocography" style="max-width: 100%; height: auto;">
+            </div>
+            <p>The project is available <a href="https://github.com/LRodriguez3/Cardiotocography">here</a>.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Luc Rodriguez. All rights reserved.</p>
+    </footer>
+</body>
+</html>
