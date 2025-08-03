@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enedis - Projects</title>
+    <title>Keolis / Hove - Projets</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -79,62 +79,57 @@
             width: 100%;
             bottom: 0;
         }
-        .language-switch {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            z-index: 1000;
-        }
-        .language-switch button {
-            padding: 5px 10px;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
     <div class="language-switch" style="position: fixed; top: 10px; right: 10px;">
-        <button onclick="window.location.href='enedis_fr.html'">Français</button>
+        <button onclick="window.location.href='keolis_hove_en.html'">English</button>
     </div>
     <header>
         <h1>Luc Rodriguez</h1>
         <p>Data Scientist & ML Engineer</p>
     </header>
     <nav>
-        <a href="../index.html">Home</a>
-        <a href="../index.html#about">About</a>
+        <a href="../index.html">Accueil</a>
+        <a href="../index.html#a-propos">À Propos</a>
         <div class="dropdown">
-            <a href="../index.html#projects">Projects</a>
+            <a href="#">Projets</a>
             <div class="dropdown-content">
-                <a href="enedis_en.html">Enedis</a>
-                <a href="keolis_hove_en.html">Keolis / Hove</a>
-                <a href="michelin_en.html">Michelin</a>
-                <a href="side_projects_en.html">Side Projects</a>
+                <a href="enedis_fr.html">Enedis</a>
+                <a href="keolis_hove_fr.html">Keolis / Hove</a>
+                <a href="michelin_fr.html">Michelin</a>
+                <a href="side_projects_fr.html">Side Projects</a>
             </div>
         </div>
         <a href="../index.html#contact">Contact</a>
     </nav>
     <div class="logo-container">
-        <img src="../images/logo_enedis.png" alt="Enedis Logo" style="max-width: 300px; height: auto;">
+        <img src="../images/logo_keolis.png" alt="Logo Keolis" style="max-width: 200px; height: auto; margin-right: 20px;">
+        <img src="../images/logo_hove.jpg" alt="Logo Hove" style="max-width: 200px; height: auto;">
     </div>
     <div class="container">
-        <h2 style="text-align: center;">Enedis</h2>
-        <p style="text-align: justify;">Enedis is the manager of the electricity distribution network in France. It plays a key role in the management and modernization of the electrical network, ensuring the balance between electricity supply and demand. Flexibility mechanisms are essential for adapting electricity consumption and production in real time, thus optimizing the use of energy resources.</p>
-        <h3 style="text-align: center;">Projects at Enedis</h3>
+        <h2 style="text-align: center;">Keolis / Hove</h2>
+        <p style="text-align: justify;">Hove est la filiale digitale du groupe Keolis, elle est scindée en deux lignes de produits. Il y a d’abord celle autour de Navitia, une plateforme d’information voyageur et un moteur d’allocation multimodales d’itinéraire voyageur, puis vient l’équipe Pattern. Pattern est une équipe de Data People effectuant de la prestation au forfait pour ses clients, notamment Keolis son client grand compte. Pattern effectue des études de mobilité sur les territoires. C’est dans cette équipe que j’ai évolué et où je me suis vu en charge de divers sujets.</p>
+        <h3 style="text-align: center;">Projets chez Keolis / Hove</h3>
         <div class="project">
-            <h4>Panel Method</h4>
-            <p>This project required the creation of a calculation engine for predicting consumption when consumption reductions have occurred. The method is already used to value flexibilities within the EIF and Flex Locale mechanisms and is expected to come into force on September 1, 2025, for NEBEF. The scope is LV below 36 kVA.</p>
+            <h4>Data Engineer: Conception d'une chaîne de traitement sur Databricks</h4>
+            <p>Conception et développement d'une chaîne de traitement de données sur Databricks pour gérer et analyser les données de la flotte de vélos en libre-service.</p>
         </div>
         <div class="project">
-            <h4>KPPVGeo</h4>
-            <p>KPPVGeo is a project involving the development of a calculation engine for predicting the production of photovoltaic and wind producers on LV below 36 kVA and MV networks when they have experienced production curtailments.</p>
+            <h4>Data Analytics: Création d'une visualisation de données pour une flotte de vélib</h4>
+            <p>Création d'une visualisation de données interactive pour surveiller et analyser l'utilisation et la performance de la flotte de vélos en libre-service.</p>
         </div>
         <div class="project">
-            <h4>NLP Data Valorization for Consumption</h4>
-            <p>This project involves using data from social media posts, newspapers, or other sources via methods such as scraping, API access, or data providers to create relevant features to explain and predict consumption.</p>
+            <h4>Data Science / ML Engineer</h4>
+            <ul>
+                <li>Segmentation de clientèle: Développement d'un modèle de segmentation pour mieux comprendre et cibler les différents groupes de clients.</li>
+                <li>Segmentation de territoire: Analyse et segmentation des territoires pour optimiser la distribution et la maintenance des vélos.</li>
+                <li>Prédiction de logs d'une application: Utilisation de modèles de machine learning pour prédire les logs et les erreurs potentielles dans les applications.</li>
+            </ul>
         </div>
     </div>
     <footer>
-        <p>&copy; 2025 Luc Rodriguez. All rights reserved.</p>
+        <p>&copy; 2023 Luc Rodriguez. Tous droits réservés.</p>
     </footer>
 </body>
 </html>

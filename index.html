@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -108,96 +108,106 @@
         .project {
             text-align: justify;
         }
+        .language-switch {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+        .language-switch button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <div class="language-switch">
-        <button onclick="window.location.href='index_en.html'">English</button>
+    <div class="language-switch" style="position: fixed; top: 10px; right: 10px;">
+        <button onclick="window.location.href='index_fr.html'">Français</button>
     </div>
     <header>
         <h1>Luc Rodriguez</h1>
         <p>Data Scientist & ML Engineer</p>
     </header>
     <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#a-propos">À Propos</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
         <div class="dropdown">
-            <a href="#projets">Projets</a>
+            <a href="#projects">Projects</a>
             <div class="dropdown-content">
-                <a href="pages/enedis.html">Enedis</a>
-                <a href="pages/keolis_hove.html">Keolis / Hove</a>
-                <a href="pages/michelin.html">Michelin</a>
-                <a href="pages/side_projects.html">Side Projects</a>
+                <a href="pages/enedis_en.html">Enedis</a>
+                <a href="pages/keolis_hove_en.html">Keolis / Hove</a>
+                <a href="pages/michelin_en.html">Michelin</a>
+                <a href="pages/side_projects_en.html">Side Projects</a>
             </div>
         </div>
         <a href="#contact">Contact</a>
     </nav>
     <div class="container">
-        <section id="accueil">
-            <h2 style="text-align: center;">Bienvenue sur mon Portfolio</h2>
+        <section id="home">
+            <h2 style="text-align: center;">Welcome to My Portfolio</h2>
             <div class="image-container">
-                <img src="images/neural_network.jpg" alt="Réseau de Neurones" style="max-width: 100%; height: auto;">
+                <img src="images/neural_network.jpg" alt="Neural Network" style="max-width: 100%; height: auto;">
             </div>
-            <p style="text-align: justify;">Explorez mes projets et découvrez mon parcours professionnel dans le domaine de la data science et du machine learning.</p>
+            <p style="text-align: justify;">Explore my projects and discover my professional journey in the field of data science and machine learning.</p>
         </section>
-        <section id="a-propos">
-            <h2 style="text-align: center;">À Propos de Moi</h2>
-            <p style="text-align: justify;">Je suis un data scientist et un ingénieur en machine learning spécialisé dans le domaine de l'énergie et des mécanismes de marché avec une expertise sur les stacks AWS, Databricks et Power BI.</p>
+        <section id="about">
+            <h2 style="text-align: center;">About Me</h2>
+            <p style="text-align: justify;">I am a data scientist and machine learning engineer specialized in the energy sector and market mechanisms with expertise in AWS, Databricks, and Power BI stacks.</p>
             <div class="chart-container">
-                <h3>Mon expertise en tant que data person</h3>
+                <h3>My Expertise as a Data Person</h3>
                 <img src="images/cat_pie_chart.png" alt="Pie Chart" style="max-width: 100%; height: auto;">
             </div>
         </section>
-        <section id="projets">
-            <h2 style="text-align: center;">Mes Projets</h2>
+        <section id="projects">
+            <h2 style="text-align: center;">My Projects</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <h3><a href="pages/enedis.html">Enedis (2024 - Aujourd'hui)</a></h3>
+                    <h3><a href="pages/enedis_en.html">Enedis (2024 - Present)</a></h3>
                     <ul>
-                        <li style="text-align: justify;">Méthode des Panels: Création d'un moteur de calcul pour la prédiction de consommation.</li>
-                        <li style="text-align: justify;">KPPVGeo: Développement d'un moteur de calcul pour la prédiction de production des producteurs photovoltaïques et éoliens.</li>
-                        <li style="text-align: justify;">Valorisation des données NLP pour la consommation: Utilisation de données de réseaux sociaux et d'autres sources pour expliquer et prédire la consommation.</li>
+                        <li style="text-align: justify;">Panel Method: Creation of a calculation engine for consumption prediction.</li>
+                        <li style="text-align: justify;">KPPVGeo: Development of a calculation engine for predicting the production of photovoltaic and wind producers.</li>
+                        <li style="text-align: justify;">NLP Data Valorization for Consumption: Use of social media data and other sources to explain and predict consumption.</li>
                     </ul>
                 </div>
                 <div class="timeline-item">
-                    <h3><a href="pages/keolis_hove.html">Keolis / Hove (2022 - 2023)</a></h3>
+                    <h3><a href="pages/keolis_hove_en.html">Keolis / Hove (2022 - 2023)</a></h3>
                     <ul>
-                        <li style="text-align: justify;">Data Engineer: Conception d'une chaîne de traitement sur Databricks.</li>
-                        <li style="text-align: justify;">Data Analytics: Création d'une visualisation de données pour une flotte de vélib.</li>
+                        <li style="text-align: justify;">Data Engineer: Design of a processing chain on Databricks.</li>
+                        <li style="text-align: justify;">Data Analytics: Creation of a data visualization for a fleet of shared bicycles.</li>
                         <li style="text-align: justify;">Data Science / ML Engineer:
                             <ul>
-                                <li style="text-align: justify;">Segmentation de clientèle.</li>
-                                <li style="text-align: justify;">Segmentation de territoire.</li>
-                                <li style="text-align: justify;">Prédiction de logs d'une application.</li>
+                                <li style="text-align: justify;">Customer Segmentation.</li>
+                                <li style="text-align: justify;">Territory Segmentation.</li>
+                                <li style="text-align: justify;">Application Log Prediction.</li>
                             </ul>
                         </li>
                     </ul>
                 </div>
                 <div class="timeline-item">
-                    <h3><a href="pages/michelin.html">Michelin (2018 - 2021)</a></h3>
+                    <h3><a href="pages/michelin_en.html">Michelin (2018 - 2021)</a></h3>
                     <ul>
-                        <li style="text-align: justify;">Développement d’un modèle de machine learning hybride pour la prédiction de la performance de pneumatiques sur Python.</li>
-                        <li style="text-align: justify;">Développement d’un outil d’analyse de survie sur R.</li>
-                        <li style="text-align: justify;">Développement d’une méthode de validation de simulations via des outils statistiques.</li>
-                        <li style="text-align: justify;">Stage aux États-Unis, analyse de données de pression de pneumatique.</li>
+                        <li style="text-align: justify;">Development of a hybrid machine learning model for predicting tire performance on Python.</li>
+                        <li style="text-align: justify;">Development of a survival analysis tool on R.</li>
+                        <li style="text-align: justify;">Development of a method for validating simulations using statistical tools.</li>
+                        <li style="text-align: justify;">Internship in the United States, analysis of tire pressure data.</li>
                     </ul>
                 </div>
             </div>
             <section style="text-align: left;">
-                <h3><a href="pages/side_projects.html">Side Projects</a></h3>
+                <h3><a href="pages/side_projects_en.html">Side Projects</a></h3>
                 <ul>
-                    <li style="text-align: justify;">Prédiction de la consommation électrique par les déplacements.</li>
-                    <li style="text-align: justify;">Prédiction de problèmes fœtaux par un cardiotocographe.</li>
+                    <li style="text-align: justify;">Prediction of electrical consumption by travel.</li>
+                    <li style="text-align: justify;">Prediction of fetal problems by cardiotocography.</li>
                 </ul>
             </section>
         </section>
         <section id="contact">
             <h2 style="text-align: center;">Contact</h2>
-            <p style="text-align: justify;">Pour toute demande de contact, je vous invite à venir à ma rencontre sur <a href="https://www.linkedin.com/in/luc-rodriguez-b21885143/">LinkedIn</a>.</p>
+            <p style="text-align: justify;">For any contact request, I invite you to meet me on <a href="https://www.linkedin.com/in/luc-rodriguez-b21885143/">LinkedIn</a>.</p>
         </section>
     </div>
     <footer>
-        <p>&copy; 2023 Luc Rodriguez. Tous droits réservés.</p>
+        <p>&copy; 2025 Luc Rodriguez. All rights reserved.</p>
     </footer>
 </body>
 </html>
